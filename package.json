@@ -1,0 +1,28 @@
+{
+  "name": "@chyvacheck/converter",
+  "version": "0.2.3",
+  "author": {
+    "name": "chyvacheck",
+    "email": "dmytro.4or.dev@gmail.com"
+  },
+  "license": "MIT",
+  "description": "A simple image converter CLI tool",
+  "main": "converter.js",
+  "bin": {
+    "converter": "./bin/converter"
+  },
+  "dependencies": {
+    "sharp": "^0.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/sharp": "^0.32.0",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "CLI",
+    "converter",
+    "image"
+  ],
+  "private": false
+}

@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const path = require("path");
+const { spawn } = require("child_process");
+
+const scriptPath = path.join(__dirname, "../dist/index.js");
+const args = process.argv.slice(2);
+
+const converter = spawn("node", [scriptPath, ...args], { stdio: "inherit" });
+
+converter.on("exit", (code) => {
+  process.exit(code);
+});
